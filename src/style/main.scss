@@ -142,3 +142,53 @@ header {
         width: 100%;
     }
 }
+
+.flex__content-left {
+    display: flex;
+    padding: 10px 0;
+}
+
+.left__information {
+    margin-top: 30px;
+}
+
+.information__text {
+    width: 50%;
+    span {
+        @include font (14px, #333);
+        font-weight: bold;
+
+    }
+}
+
+.information__value {
+    width: 50%;
+    span {
+        @include font (14px, #333);
+        font-weight: 400;
+    }
+}
+
+.actors {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    text-align: center;
+    margin-top: 27px;
+}
+
+.btn-IMDB {
+    padding: 17px 116px;
+    border: 5px solid #ffe200; 
+    @include font (24px, #868686);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    &:hover {
+        color: #333;
+        background-color: #ffe200;
+        transition: 0.4s;
+    }
+}
