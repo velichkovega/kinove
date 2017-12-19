@@ -1,0 +1,112 @@
+/*
+* Third Party
+*/
+@import "../../bower_components/normalize.css/normalize.css";
+
+/*
+* Custom
+*/
+@import "partials/app";
+@import "partials/variables.scss";
+// @import "../../node_modules/slick-carousel/slick/slick.scss";
+
+@font-face { 
+    font-family: "Lato";
+    src: url(../fonts/LatoRegular.ttf);
+}
+
+@mixin font ($size, $color) {
+    font-family: "Lato";
+    font-size: $size;
+    color: $color;
+}
+
+.container {
+    width: $desktop-container;
+    margin: 0 auto;
+    @media (max-width: $lg-max) {
+        width: 90%;
+    }
+}
+
+//header
+
+header {
+    background-color: #393939;
+}
+
+.social-lang {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+}
+
+.social-lang__social {
+    display: flex;
+    align-items: center;
+}
+
+.social__icon {
+    padding-right: 25px;
+    display: flex;
+}
+
+.social-lang__lang {
+    display: flex;
+    align-items: center;
+}
+
+.lang__text {
+    padding-left: 10px;
+    font-family: "Lato";
+    color: #cccccc;
+    font-size: 12px;
+    text-transform: uppercase;
+    &:hover {
+        color: #ffe200;
+        cursor: pointer;
+    }
+}
+
+.logo-title-about__img {
+    background-image: url(../img/bacimg.png);
+    width: 100%;
+    height: 400px;
+    background-position: center;
+}
+
+.logo-title-about {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.header__title {
+    @include font (72px, #ffe200);
+    align-self: center;
+    text-align: center;
+}
+
+.header__logo {
+    margin-top: 1%;
+}
+
+.header__about {
+    @include font (18px, #cccccc);
+    text-transform: uppercase;
+    margin-top: 2%;
+    &:after {
+        content: "";
+        display: block;
+        border-bottom: 3px solid #ffe200;
+        margin: 0 auto;
+        width: 95%;
+    }
+}
+
+.container-header__height {
+    height: 100%;
+}
+
+//container
+
