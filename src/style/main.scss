@@ -31,6 +31,38 @@
 
 //header
 
+.socialLinks-item { 
+    cursor: pointer; 
+    height: 25px; 
+    width: 25px; 
+    margin-right: 20px; 
+    transition: 0.3s; 
+    &.socialLinks-item_fb { 
+        background: url('../img/social-icons/fb.svg') no-repeat; 
+        background-size: cover; 
+        &:hover { 
+            background: url('../img/social-icons/fb-hover.svg') no-repeat; 
+            background-size: cover; 
+        } 
+    } 
+    &.socialLinks-item_inst { 
+        background: url('../img/social-icons/inst.svg') no-repeat; 
+        background-size: cover; 
+        &:hover { 
+            background: url('../img/social-icons/inst-hover.svg') no-repeat; 
+            background-size: cover; 
+        } 
+    } 
+    &.socialLinks-item_tw { 
+        background: url('../img/social-icons/tw.svg') no-repeat; 
+        background-size: cover; 
+        &:hover { 
+            background: url('../img/social-icons/tw-hover.svg') no-repeat; 
+            background-size: cover; 
+        } 
+    } 
+}
+
 header {
     background-color: #393939;
 }
