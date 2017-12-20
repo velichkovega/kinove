@@ -12,6 +12,10 @@
 @import "partials/main-page.scss";
 // @import "../../node_modules/slick-carousel/slick/slick.scss";
 
+a {
+    text-decoration: none;
+}
+
 @font-face { 
     font-family: "Lato";
     src: url(../fonts/LatoRegular.ttf);
@@ -148,6 +152,10 @@ header {
     @include font (18px, #cccccc);
     text-transform: uppercase;
     margin-top: 2%;
+
+    a {
+        color: #cccccc;
+    }
     &:after {
         content: "";
         display: block;
@@ -283,6 +291,9 @@ header {
         @media (max-width: $xs-max) {
             width: 75%;
         }
+        @media #{$md} {
+            width: 50%;
+        }
     }
     img {
         display: block;
@@ -300,4 +311,12 @@ header {
     text-align: center;
     @include font (24px, #313131);
     padding: 21px 0 16px;
+
+    @media #{$md} {
+        font-size: 16px;
+    }
+
+    @media #{$xs} {
+        font-size: 16px;
+    }
 }
