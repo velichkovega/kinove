@@ -313,6 +313,13 @@ header {
     }
 }
 
+.wraper-conteiner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
 .footer-content {
     background-color: #696969;
     text-align: center;
@@ -378,6 +385,9 @@ header {
         padding: 10px 0;
         @include font (18px, #313131);
         font-weight: 300;
+        @media (max-width: 1024px) {
+            font-size: 14px;
+        }
     }
 }
 
@@ -398,6 +408,17 @@ header {
     .about__persone {
         align-items: flex-start;
         flex-direction: column;
+        align-items: center;
+        margin-top: 10%;
+    }
+
+    .info__text {
+        margin-top: 10%;
+    }
+
+    .about__info-logo {
+        flex-direction: column-reverse;
+
     }
 
     .persone {
@@ -410,9 +431,6 @@ header {
 }
 
 @media (max-width: $sm-min) {
-    .about__info-logo {
-        flex-direction: column;
-    }
 
     .info__text {
         width: 100%;
@@ -420,5 +438,20 @@ header {
 
     .about__logo {
         margin-top: 30px;
+    }
+}
+
+@media (max-width: 628px) {
+    .persone {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .persone__ul-menu {
+        text-align: center;
+    }
+
+    .persone__menu {
+        padding: 0;
     }
 }
