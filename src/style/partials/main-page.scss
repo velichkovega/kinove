@@ -19,7 +19,72 @@ video {
   position: absolute;
 }
 
+.mainVideo-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__about.header__about--main {
+    margin-top: 0;
+}
 
+.container.container-video {
+  min-height: 100%;
+  height: 590px;
+  position: relative;
+}
+
+.mainVideoDescription {
+  width: 50%;
+  position: absolute;
+  bottom: 100px;
+  right: 0;
+  text-align: right;
+  .mainVideo-title {
+    font-size: 32px;
+  }
+  .mainVideo-paragraph {
+    font-size: 18px;
+  }
+}
+
+.selectBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .selectBlock-film {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    a {
+      color: #777777;
+      transition: 0.5s;
+      &:hover {
+        transition: 0.5s;
+        color: #000;
+      }
+    }
+    .filmLink {
+      text-align: right;
+    }
+    .festivalLink {
+      text-align: left;
+    }
+    span {
+      font-size: 30px;
+    }
+    .border {
+      color: black;
+      background-color: black;
+      width: 2px;
+      height: 55px;
+      display: block;
+      margin: 12px;
+    }
+  }
+}
 
 @media #{$md} {
   video {
@@ -32,5 +97,8 @@ video {
   video {
     width: auto;
     height: 100%;
+  }
+  .mainVideoDescription {
+    width: 100%;
   }
 }
