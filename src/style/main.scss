@@ -263,7 +263,6 @@ header {
     a {
         @include font (24px, #868686);
         font-weight: bold;
-        text-transform: uppercase;
         text-decoration: none;
         &:hover {
             color: #333;
@@ -319,4 +318,15 @@ header {
     @media #{$xs} {
         font-size: 16px;
     }
+}
+
+.img-title--position {
+    position: relative;
+}
+
+.img-title__play {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
 }
