@@ -1,0 +1,36 @@
+@import "variables.scss";
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+.video-wrapper {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  height: 670px;
+  overflow: hidden;
+}
+
+.logo {
+  position: absolute;
+}
+
+
+
+@media #{$md} {
+  video {
+    width: auto;
+    height: 100%;
+  }
+}
+
+@media #{$sm}, #{$xs} {
+  video {
+    width: auto;
+    height: 100%;
+  }
+}

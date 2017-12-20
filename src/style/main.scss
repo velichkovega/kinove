@@ -3,11 +3,13 @@
 */
 @import "../../bower_components/normalize.css/normalize.css";
 
+
 /*
 * Custom
 */
 @import "partials/app";
 @import "partials/variables.scss";
+@import "partials/main-page.scss";
 // @import "../../node_modules/slick-carousel/slick/slick.scss";
 
 @font-face { 
@@ -217,7 +219,7 @@ header {
             transition: 0.4s;
         }
     a {
-        @include font (24px, #868686); 
+        @include font (24px, #868686);
         font-weight: bold;
         text-transform: uppercase;
         text-decoration: none;
@@ -229,6 +231,6 @@ header {
 }
 
 .content-text {
-    @include font (14px, #333); 
+    @include font (14px, #333);
     font-weight: bold;
 }
