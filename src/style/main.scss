@@ -271,7 +271,6 @@ header {
     a {
         @include font (24px, #868686);
         font-weight: bold;
-        text-transform: uppercase;
         text-decoration: none;
         &:hover {
             color: #333;
@@ -326,5 +325,100 @@ header {
 
     @media #{$xs} {
         font-size: 16px;
+    }
+}
+
+.img-title--position {
+    position: relative;
+}
+
+.img-title__play {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+//about 
+.about__info-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about {
+    padding: 110px 0;
+}
+
+.info__text {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 5px solid #ffe200;
+    span {
+        @include font (16px, #333);
+    }
+}
+
+.about__persone {
+    margin-top: 78px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.persone {
+    display: flex;
+    align-items: center;
+}
+
+.persone__menu {
+    list-style: none;
+    li {
+        padding: 10px 0;
+        @include font (18px, #313131);
+        font-weight: 300;
+    }
+}
+
+.persone-name {
+    span {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: $lg-min) {
+    .persone-img {
+        img {
+            width: 218px;
+            height: 218px;
+        }
+    }
+
+    .about__persone {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .persone {
+        padding: 20px;
+    }
+
+    .about {
+        padding: 50px;
+    }
+}
+
+@media (max-width: $sm-min) {
+    .about__info-logo {
+        flex-direction: column;
+    }
+
+    .info__text {
+        width: 100%;
+    }
+
+    .about__logo {
+        margin-top: 30px;
     }
 }
