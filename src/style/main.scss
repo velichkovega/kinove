@@ -16,6 +16,14 @@ a {
     text-decoration: none;
 }
 
+body, html {
+    font-family: "Lato", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+
+a, p, h1, h2 {
+    font-family: "Lato", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+
 @font-face { 
     font-family: "Lato";
     src: url(../fonts/LatoRegular.ttf);
